@@ -26,7 +26,7 @@ pipeline {
         stage('Code Coverage Report') {
             steps {
                 script {
-                    archiveArtifacts 'build/reports/jacoco/tests/html'
+                    archiveArtifacts 'build/reports/jacoco/tests'
                 }
             }
         }
