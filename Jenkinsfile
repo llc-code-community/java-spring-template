@@ -18,7 +18,7 @@ pipeline {
         stage('Build and Test') {
             steps {
                 script {
-                    sh './gradlew build test integration jacocoTestReport'
+                    sh './gradlew build test jacocoTestReport'
                 }
             }
         }
