@@ -97,3 +97,9 @@ jib {
         image = "eclipse-temurin:17.0.6_10-jre-alpine"
     }
 }
+
+jacocoTestReport {
+    reports {
+        xml.required = true
+    }
+}

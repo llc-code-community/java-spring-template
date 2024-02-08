@@ -23,13 +23,13 @@ pipeline {
             }
         }
 
-        stage('Code Coverage Report') {
-            steps {
-                script {
-                    archiveArtifacts 'build/reports/jacoco/tests'
-                }
-            }
-        }
+//         stage('Code Coverage Report') {
+//             steps {
+//                 script {
+//                     archiveArtifacts 'build/reports/jacoco/tests'
+//                 }
+//             }
+//         }
 
         stage('Build Docker Image') {
             steps {
